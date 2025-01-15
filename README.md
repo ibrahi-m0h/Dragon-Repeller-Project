@@ -1,2 +1,2 @@
 # Dragon-Repeller-Project
-A simple project to practice my HTML, CSS, and JS
+A freecodecamp project to keep my HTML, CSS, and JS skills sharp
