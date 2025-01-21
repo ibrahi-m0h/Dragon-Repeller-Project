@@ -1,5 +1,5 @@
 // Player stat variables
-// Declare global let variables that may be updated later in program as player plays thoruhg
+// Declare global let variables that may be updated later in program as player plays through game
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -10,6 +10,7 @@ let inventory = ["stick"];
 
 
 // Declare global constant variables
+// Query select variables using html id's, allowing DOM manipulation
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -21,13 +22,15 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-//
+// Create weapon objects with name and power attributes
 const weapons = [
   { name: 'stick', power: 5 },
   { name: 'dagger', power: 30 },
   { name: 'claw hammer', power: 50 },
   { name: 'sword', power: 100 }
 ];
+
+// Create location objects with name, button text, and button function attributes
 const locations = [
   {
     name: "town square",
